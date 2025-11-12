@@ -672,7 +672,26 @@ Bracket.Assets = {
 		Title.FontFace = Font.fromEnum(Enum.Font.SourceSansSemibold)
 		Title.TextXAlignment = Enum.TextXAlignment.Left
 		Title.Parent = Topbar
-		
+
+		local Label = Instance.new("TextLabel")
+		Label.Name = "Label"
+		Label.AnchorPoint = Vector2.new(1, 0.5)
+		Label.Size = UDim2.new(0, 62, 1, 0)
+		Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Label.BackgroundTransparency = 1
+		Label.Position = UDim2.new(1, -4, 0.5, 0)
+		Label.BorderSizePixel = 0
+		Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Label.TextStrokeTransparency = 0.75
+		Label.TextSize = 14
+		Label.RichText = true
+		Label.TextColor3 = Color3.fromRGB(191, 191, 191)
+		-- Label.TextYAlignment = Enum.TextYAlignment.Top
+		Label.Text = "Bracket V3.4"
+		Label.FontFace = Font.fromEnum(Enum.Font.SourceSansSemibold)
+		Label.TextXAlignment = Enum.TextXAlignment.Right
+		Label.Parent = Topbar
+
 		local Background = Instance.new("ImageLabel")
 		Background.Name = "Background"
 		Background.ZIndex = 2
